@@ -41,7 +41,7 @@ namespace ProgramTopics
         #region PRIVATE_METHODS
         private void GetYourselfReady()
         {
-            Console.WriteLine($"{0} is getting himself ready...", Name);
+            Console.WriteLine($"{Name} is getting himself ready...");
         }
         private void GoToSchool()
         {
@@ -51,7 +51,7 @@ namespace ProgramTopics
         }
         private void RegisterYourPresence() 
         {
-            Console.WriteLine($"{0} is present in person at school today...", Name);
+            Console.WriteLine($"Roll No#{RollNo} is present in person at school today.");
         }
 
         #endregion
