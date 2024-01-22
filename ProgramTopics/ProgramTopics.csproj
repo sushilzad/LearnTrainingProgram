@@ -48,7 +48,8 @@
     <Compile Include="Topic2\Topic2_ObjectOrientedConcepts_Advanced.cs" />
     <Compile Include="Topic3\Task1_StringOperations.cs" />
     <Compile Include="Topic3\Task2_CSharpKeywords.cs" />
-    <Compile Include="Topic3\Task3_Exceptions.cs" />
+    <Compile Include="Topic3\Task3_And_Task4_Exceptions.cs" />
+    <Compile Include="Topic3\Task5_AccessSpecifiers_And_Enums.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
