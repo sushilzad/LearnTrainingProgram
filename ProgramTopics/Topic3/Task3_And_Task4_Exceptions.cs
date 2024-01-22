@@ -52,7 +52,7 @@ namespace ProgramTopics.Topic3
     /// <summary>
     /// This class demonstrates the use of custom Exceptions
     /// </summary>
-    class Task3_Exceptions
+    class Task3_And_Task4_Exceptions
     {
         #region PUBLIC_METHODS
         /// <summary>
