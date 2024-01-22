@@ -49,8 +49,8 @@
     <Compile Include="Topic3\Task1_StringOperations.cs" />
     <Compile Include="Topic3\Task2_CSharpKeywords.cs" />
     <Compile Include="Topic3\Task3_And_Task4_Exceptions.cs" />
-    <Compile Include="Topic3\Task5_AccessSpecifiers_And_Enums.cs" />
-    <Compile Include="Topic3\Task6_Inhertiance.cs" />
+    <Compile Include="Topic3\Task5_And_Task9_AccessSpecifiers_And_Enums.cs" />
+    <Compile Include="Topic3\Task6_And_Task7_And_Task8_Inhertiance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

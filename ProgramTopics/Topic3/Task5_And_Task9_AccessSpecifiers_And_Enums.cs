@@ -57,7 +57,7 @@ namespace ProgramTopics.Topic3
     /// <summary>
     /// This class demonstrates the behavior of access specifier
     /// </summary>
-    class Task5_AccessSpecifiers_And_Enums : AccessSpecifier
+    class Task5_And_Task9_AccessSpecifiers_And_Enums : AccessSpecifier
     {
         /// <summary>
         /// Enums indicating three states of an entity
@@ -77,7 +77,7 @@ namespace ProgramTopics.Topic3
         public void PerformAccessSpecifierDemo()
         {
             // ACCESS MODIFIERS
-            Task5_AccessSpecifiers_And_Enums accessSpecifier = new Task5_AccessSpecifiers_And_Enums();
+            Task5_And_Task9_AccessSpecifiers_And_Enums accessSpecifier = new Task5_And_Task9_AccessSpecifiers_And_Enums();
             accessSpecifier.TryModifyingProtectedValue();
             accessSpecifier.TryModifyingPublicValue();
             accessSpecifier.TryModifyingInternalValue();

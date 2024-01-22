@@ -27,12 +27,12 @@ namespace ProgramTopics
             Topic3.Task3_And_Task4_Exceptions task3_Exceptions = new Topic3.Task3_And_Task4_Exceptions();
             task3_Exceptions.PerformExceptionHandling();
 
-            DisplayMessageOnConsole("TOPIC 3 - TASK 5");
-            Topic3.Task5_AccessSpecifiers_And_Enums task5_AccessSpecifiers_And_Enums = new Topic3.Task5_AccessSpecifiers_And_Enums();
+            DisplayMessageOnConsole("TOPIC 3 - TASK 5 and TASK 9");
+            Topic3.Task5_And_Task9_AccessSpecifiers_And_Enums task5_AccessSpecifiers_And_Enums = new Topic3.Task5_And_Task9_AccessSpecifiers_And_Enums();
             task5_AccessSpecifiers_And_Enums.PerformAccessSpecifierDemo();
 
-            DisplayMessageOnConsole("TOPIC 3 - TASK 6");
-            Topic3.Task6_Inhertiance task6_Inhertiance = new Topic3.Task6_Inhertiance();
+            DisplayMessageOnConsole("TOPIC 3 - TASK 6 and TASK 7 and TASK 8");
+            Topic3.Task6_And_Task7_And_Task8_Inhertiance task6_Inhertiance = new Topic3.Task6_And_Task7_And_Task8_Inhertiance();
             task6_Inhertiance.PerformInheritanceDemonstration();
 
 

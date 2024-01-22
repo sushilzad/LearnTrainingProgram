@@ -2,12 +2,25 @@
 
 namespace ProgramTopics.Topic3
 {
+    #region Enum
+    public enum LogLevel
+    {
+        None = 0,
+        Info,
+        Warn,
+        Error,
+        Fatal
+    }
+    #endregion
+
     /// <summary>
     /// Interface for logging functionality
     /// </summary>
     interface IBaseLogger
     {
+        void Log();
         void Log(string message);
+        void Log(string message, LogLevel logLevel);
     }
 
     /// <summary>
@@ -15,6 +28,10 @@ namespace ProgramTopics.Topic3
     /// </summary>
     abstract class BaseLogger : IBaseLogger
     {
+        #region Variables
+        private LogLevel logLevel = LogLevel.None;      // default
+        #endregion
+
         #region Constructor
         /// <summary>
         /// Default constructor
@@ -39,6 +56,18 @@ namespace ProgramTopics.Topic3
         /// </summary>
         /// <param name="message"></param>
         public abstract void Log(string message);
+
+        public void Log()
+        {
+            this.logLevel = LogLevel.None;
+            this.Log(string.Empty);
+        }
+
+        public void Log(string message, LogLevel logLevel)
+        {
+            this.logLevel = logLevel;
+            this.Log(message);
+        }
     }
 
     /// <summary>
@@ -94,18 +123,20 @@ namespace ProgramTopics.Topic3
     /// <summary>
     /// This class demonstrates the usage of Interface, Abstract classes in Inheritance
     /// </summary>
-    class Task6_Inhertiance
+    class Task6_And_Task7_And_Task8_Inhertiance
     {
         #region PUBLIC_METHODS
         public void PerformInheritanceDemonstration()
         { 
             IBaseLogger dbLogger = new DatabaseLogger();
             dbLogger.Log("Log this sample text into database file");
+            dbLogger.Log("Another message", LogLevel.Warn);
 
-            Console.WriteLine("\n");
+            Console.WriteLine();
 
             IBaseLogger fileLogger = new FileLogger();
             fileLogger.Log("Log this sample text into specified log file");
+            fileLogger.Log();
         }
         #endregion
     }
