@@ -50,6 +50,7 @@
     <Compile Include="Topic3\Task2_CSharpKeywords.cs" />
     <Compile Include="Topic3\Task3_And_Task4_Exceptions.cs" />
     <Compile Include="Topic3\Task5_AccessSpecifiers_And_Enums.cs" />
+    <Compile Include="Topic3\Task6_Inhertiance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

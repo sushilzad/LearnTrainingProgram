@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProgramTopics
 {
@@ -34,6 +30,11 @@ namespace ProgramTopics
             DisplayMessageOnConsole("TOPIC 3 - TASK 5");
             Topic3.Task5_AccessSpecifiers_And_Enums task5_AccessSpecifiers_And_Enums = new Topic3.Task5_AccessSpecifiers_And_Enums();
             task5_AccessSpecifiers_And_Enums.PerformAccessSpecifierDemo();
+
+            DisplayMessageOnConsole("TOPIC 3 - TASK 6");
+            Topic3.Task6_Inhertiance task6_Inhertiance = new Topic3.Task6_Inhertiance();
+            task6_Inhertiance.PerformInheritanceDemonstration();
+
 
             Console.ReadKey();
         }
