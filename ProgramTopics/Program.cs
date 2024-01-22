@@ -27,6 +27,10 @@ namespace ProgramTopics
             Topic3.Task2_CSharpKeywords task2_CSharpKeywords = new Topic3.Task2_CSharpKeywords();
             task2_CSharpKeywords.PerformOperationUsingCSharpKeywords();
 
+            DisplayMessageOnConsole("TOPIC 3 - TASK 3");
+            Topic3.Task3_Exceptions task3_Exceptions = new Topic3.Task3_Exceptions();
+            task3_Exceptions.PerformExceptionHandling();
+
             Console.ReadKey();
         }
     }
