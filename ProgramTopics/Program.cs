@@ -35,6 +35,17 @@ namespace ProgramTopics
             Topic3.Task6_And_Task7_And_Task8_Inhertiance task6_Inhertiance = new Topic3.Task6_And_Task7_And_Task8_Inhertiance();
             task6_Inhertiance.PerformInheritanceDemonstration();
 
+            DisplayMessageOnConsole("TOPIC 3 - TASK 10");
+            Topic3.Task10_ObjectComparison task10_ObjectComparison = new Topic3.Task10_ObjectComparison();
+            task10_ObjectComparison.DemonstrateCompareOperation();
+
+            DisplayMessageOnConsole("TOPIC 3 - TASK 11");
+            Topic3.Task11_StringBuilderOperations task11_StringBuilderOperations = new Topic3.Task11_StringBuilderOperations();
+            task11_StringBuilderOperations.PerformStringBuilderOperations();
+
+            DisplayMessageOnConsole("TOPIC 3 - TASK 12 and TASK 13");
+            Topic3.Task12_And_13_Arrays task12_And_13_Arrays = new Topic3.Task12_And_13_Arrays();
+            task12_And_13_Arrays.DemonstrateUsageOfArrays();
 
             Console.ReadKey();
         }
