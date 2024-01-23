@@ -1,0 +1,24 @@
+/* MY STANDARD CLASS TEMPLATE
+
+/// <summary>
+/// 
+/// </summary>
+class name_here
+{
+    #region MEMBER_VARIABLES
+    #endregion
+
+    #region CTOR
+    #endregion
+
+    #region PROPERTIES
+    #endregion
+
+    #region PRIVATE_METHODS
+    #endregion
+
+    #region PUBLIC_METHODS
+    #endregion
+}
+
+*/
