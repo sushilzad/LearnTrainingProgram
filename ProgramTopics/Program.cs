@@ -47,6 +47,10 @@ namespace ProgramTopics
             Topic3.Task12_And_13_Arrays task12_And_13_Arrays = new Topic3.Task12_And_13_Arrays();
             task12_And_13_Arrays.DemonstrateUsageOfArrays();
 
+            DisplayMessageOnConsole("TOPIC 3 - TASK 14");
+            Topic3.Task14_Logger task14_Logger = new Topic3.Task14_Logger();
+            task14_Logger.DemonstrateLoggerImplementation();
+
             Console.ReadKey();
         }
     }
