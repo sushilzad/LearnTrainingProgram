@@ -49,6 +49,7 @@
     <Compile Include="Topic3\Task10_ObjectComparison.cs" />
     <Compile Include="Topic3\Task11_StringBuilderOperations.cs" />
     <Compile Include="Topic3\Task12_And_13_Arrays.cs" />
+    <Compile Include="Topic3\Task14_Logger.cs" />
     <Compile Include="Topic3\Task1_StringOperations.cs" />
     <Compile Include="Topic3\Task2_CSharpKeywords.cs" />
     <Compile Include="Topic3\Task3_And_Task4_Exceptions.cs" />
