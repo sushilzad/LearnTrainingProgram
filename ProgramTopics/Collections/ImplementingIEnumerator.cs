@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ProgramTopics.Collections
 {
@@ -33,7 +34,12 @@ namespace ProgramTopics.Collections
         IEnumerator IEnumerable.GetEnumerator()
         {
             Console.WriteLine("Using the Non-Generic Enumerator");
-            return this.products.GetEnumerator();
+            //return this.products.GetEnumerator();
+            return GetEnumerator();
+        }
+        IEnumerator<Product> IEnumerable<Product>.GetEnumerator()
+        {
+            return GetEnumerator();
         }
         #endregion
 
@@ -42,12 +48,58 @@ namespace ProgramTopics.Collections
         /// This generic enumerator gets invoked incase of Generic collections are used for iteration
         /// </summary>
         /// <returns>IEnumerator<Product></returns>
-        public IEnumerator<Product> GetEnumerator()
+        public ProductEnumerator GetEnumerator()
         {
             Console.WriteLine("Using the Generic Enumerator");
-            return this.products.GetEnumerator();
+            //return this.products.GetEnumerator();
+            return new ProductEnumerator(products);
         }
+
         #endregion
+    }
+
+    class ProductEnumerator : IEnumerator<Product>
+    {
+        int currentPosition = -1;
+        private IEnumerable<Product> products;
+        public ProductEnumerator(IEnumerable<Product> products)
+        {
+            this.products=products;
+        }
+
+        public Product Current => products.ElementAt(currentPosition);
+
+        object IEnumerator.Current
+        {
+            get
+            {
+                try
+                {
+                    return Current;
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    throw new InvalidOperationException();
+                }
+            }
+        }
+
+        public void Dispose()
+        {
+            this.currentPosition = -1;
+            this.products = null;
+        }
+
+        public bool MoveNext()
+        {
+            currentPosition++;
+            return currentPosition < products.Count();
+        }
+
+        public void Reset()
+        {
+            currentPosition = -1;
+        }
     }
 
     /// <summary>
