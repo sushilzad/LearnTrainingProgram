@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProgramTopics.Collections;
+using System;
 
 namespace ProgramTopics
 {
@@ -50,6 +51,15 @@ namespace ProgramTopics
             DisplayMessageOnConsole("TOPIC 3 - TASK 14");
             Topic3.Task14_Logger task14_Logger = new Topic3.Task14_Logger();
             task14_Logger.DemonstrateLoggerImplementation();
+
+            Console.WriteLine("\n\n");
+            DisplayMessageOnConsole("COLLECTIONS - IMPLEMENTATION");
+            CollectionImplementation ci = new CollectionImplementation();
+            ci.DemonstrateCollectionsClassesImplementation();
+
+            DisplayMessageOnConsole("IENUMERATOR - IMPLEMENTATION");
+            ImplementingIEnumerator implementingIEnumerator = new ImplementingIEnumerator();
+            implementingIEnumerator.DemonstrateUsageOfIEnumeratorInterfaceImplementation();
 
             Console.ReadKey();
         }
